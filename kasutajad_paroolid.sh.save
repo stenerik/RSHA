@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in  `more $1`
+do
+echo $i
+adduser --disabled-password --gecos "" $i
+done
+
+echo "marko5e:parool1" | chpasswd
